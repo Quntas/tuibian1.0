@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- selector_category_text.xml 置于res/color 目录下  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/tab_frame_selected"/>
+    <item android:state_selected="false" android:color="@color/tab_frame_normal"/>
+    <item android:color="@color/tab_frame_normal"/>
+</selector>

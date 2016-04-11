@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:dropDownHorizontalOffset="8dp"
+            android:dropDownWidth="300dp"
+            android:textColor="#E75353" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="15dip"
+            android:layout_height="6dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="14dip"
+            android:background="@drawable/spinnerpicture" >
+        </ImageView>
+
+        <AutoCompleteTextView
+            android:id="@+id/search1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/searchtext"
+            android:ems="10"
+            android:text="搜 索 场 馆 ， 地 址"
+            android:textColor="#D5D5D5"
+            android:textSize="23px" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#E6E6E6" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/venue_multi_all_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#D3D3D3"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both" />
+    </LinearLayout>
+
+</LinearLayout>

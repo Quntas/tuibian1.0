@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_gray">
+
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="13dp"
+            android:text="@string/exp_info"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/exp_name"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+        <TextView 
+            android:id="@+id/name"
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="张扬"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/exp_sex"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+        <TextView 
+            android:id="@+id/sex"
+            android:layout_height="25dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="男"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/exp_birthday"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+        <TextView 
+            android:id="@+id/birthday"
+            android:layout_height="25dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="1980年8月1日"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/exp_blood"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+        <TextView 
+            android:id="@+id/blood"
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="A型"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/exp_analysis"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/classify"
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:text="肝体制"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+    </LinearLayout>            
+
+    <WebView
+        android:id="@+id/load_webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/ll_analysis" />
+
+</LinearLayout>

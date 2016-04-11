@@ -1,0 +1,111 @@
+# view res/layout/activity_guide_page.xml #generated:6
+# view res/layout/activity_tribe.xml #generated:10
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/venuemap.xml #generated:9
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view res/layout/tribe_muti_list.xml #generated:15
+# view res/layout/tribe_muti_list2.xml #generated:47
+-keep class com.handmark.pulltorefresh.library.PullToRefreshGridView { <init>(...); }
+
+# view res/layout/shop_muti_list.xml #generated:106
+# view res/layout/venue_multi_all.xml #generated:60
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.tuibian.aboutandset.About { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.tuibian.aboutandset.Analysis { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.tuibian.aboutandset.Set { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.tuibian.aboutandset.SetChangePlayerinfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.tuibian.aboutandset.SetChangeUserPass { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.tuibian.aboutandset.SetChangeUserinfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.tuibian.activity.MatchInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.tuibian.activity.MessageWebview { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.tuibian.activity.PlayerInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.tuibian.activity.VenueInfoActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:31
+-keep class com.tuibian.fragment.MeFragment { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:26
+-keep class com.tuibian.fragment.ShopFragment { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:13
+-keep class com.tuibian.fragment.TribeFragment { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:20
+-keep class com.tuibian.fragment.VenueFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.tuibian.login.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.tuibian.login.RegActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.tuibian.login.RegUserinfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.tuibian.main.BaseApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.tuibian.main.MainActivity { <init>(...); }
+
+# view res/layout/activity_abase_main.xml #generated:9
+-keep class com.tuibian.main.TitleFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.tuibian.map.Venue_getMap { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.tuibian.register.RegistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.tuibian.update.CompleteReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.tuibian.venue.Venue_List { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.tuibian.venue.Venue_pinglun_all { <init>(...); }
+
+# view res/layout/activity_me.xml #generated:28
+-keep class com.tuibian.view.CircleImageView { <init>(...); }
+
+# view res/layout/venue_info.xml #generated:169
+# view res/layout/venue_new_info.xml #generated:280
+-keep class com.tuibian.view.NoScrollListView { <init>(...); }
+
+# view res/layout/venue_info.xml #generated:28
+# view res/layout/venue_new_info.xml #generated:28
+-keep class com.tuibian.view.bannerview.CircleFlowIndicator { <init>(...); }
+
+# view res/layout/venue_info.xml #generated:15
+# view res/layout/venue_new_info.xml #generated:15
+-keep class com.tuibian.view.bannerview.ViewFlow { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.tuibian.welcome.GuidePageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.tuibian.welcome.WelcomeActivity { <init>(...); }
+

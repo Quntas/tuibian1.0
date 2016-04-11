@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/me_bg"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <TextView 
+	 android:id="@+id/user_name"
+	 android:layout_height="wrap_content"
+	 android:layout_width="wrap_content"
+	 android:layout_gravity="center_horizontal|center_vertical"
+	 android:text="点击头像开始蜕变"
+	 android:textColor="@color/blue"
+	 android:textSize="20sp"/>
+
+
+ 	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp" >
+
+        <com.tuibian.view.CircleImageView
+            android:id="@+id/record_head"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_head" />
+    </RelativeLayout>
+    <TextView 
+	 android:id="@+id/user_age"
+	 android:layout_height="wrap_content"
+	 android:layout_width="wrap_content"
+	 android:layout_gravity="center_horizontal|center_vertical"
+	 android:text="1990-01-01"
+	 android:textColor="@color/blue"
+	 android:textSize="18sp"/>
+    <TextView 
+	 android:id="@+id/user_sex"
+	 android:layout_height="wrap_content"
+	 android:layout_width="wrap_content"
+	 android:layout_gravity="center_horizontal|center_vertical"
+	 android:text="男"
+	 android:textColor="@color/blue"
+	 android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/prat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#F8F8F8" 
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:id="@+id/h_record_person "
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_01" />
+            <TextView
+                android:id="@+id/person_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="个人资料"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_player"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_01" />
+            <TextView
+                android:id="@+id/person_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="我的账号"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_collection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_06" />
+            <TextView
+                android:id="@+id/collection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="我的预约"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_orders"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_06" />
+            <TextView
+                android:id="@+id/collection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="我的订单"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_favorites"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_06" />
+            <TextView
+                android:id="@+id/collection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="我的收藏"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_set"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="0.5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_07" />
+            <TextView
+                android:id="@+id/set_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="设  置"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        
+		 <RelativeLayout
+            android:id="@+id/h_record_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_02" />
+            <TextView
+                android:id="@+id/feedback_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="帮助与反馈"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/h_record_about"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/me_05" />
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dip"
+                android:text="关  于"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/h_record_edit" />
+        </RelativeLayout>
+       
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

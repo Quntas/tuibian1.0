@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+		<fragment
+		    android:id="@+id/tribe_fragment"
+		    android:name="com.tuibian.fragment.TribeFragment"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    tools:layout="@layout/activity_login" />
+
+        <fragment
+            android:id="@+id/venue_fragment"
+            android:name="com.tuibian.fragment.VenueFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+        
+         <fragment
+            android:id="@+id/shop_fragment"
+            android:name="com.tuibian.fragment.ShopFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+         <fragment
+            android:id="@+id/me_fragment"
+            android:name="com.tuibian.fragment.MeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#5EDA4B" />
+
+    <!-- 底部的按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:orientation="horizontal" >
+
+       
+        <FrameLayout
+            android:id="@+id/btn_page_tribe_view"
+            style="@style/main_tab_frame" >
+
+            <Button
+                android:id="@+id/btn_page_tribe"
+                style="@style/main_tab_bottom"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/h_tab_main_tribe_selector"
+                 android:clickable="false"/>
+             <TextView 
+                 android:id="@+id/btn_page_tribe_text"
+                 style="@style/main_tab_text"
+                 android:text="部落"
+             /> 
+        </FrameLayout>
+         <FrameLayout 
+            android:id="@+id/btn_page_venue_view"
+            style="@style/main_tab_frame" >
+
+            <Button
+                android:id="@+id/btn_page_venue"
+                style="@style/main_tab_bottom"
+                android:layout_width="32dp"
+       			android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/h_tab_main_venue_selector"
+                android:clickable="false" />
+             <TextView 
+                 android:id="@+id/btn_page_venue_text"
+                 style="@style/main_tab_text"
+                 android:text="场馆"
+             /> 
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/btn_page_shop_view"
+            style="@style/main_tab_frame" >
+
+            <Button
+                android:id="@+id/btn_page_shop"
+                style="@style/main_tab_bottom"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/h_tab_main_shop_selector"
+                 android:clickable="false"/>
+             <TextView 
+                 android:id="@+id/btn_page_shop_text"
+                 style="@style/main_tab_text"
+                 android:text="商城"
+             /> 
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_page_me_view"
+            style="@style/main_tab_frame" >
+
+            <Button
+                android:id="@+id/btn_page_me"
+                style="@style/main_tab_bottom"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/h_tab_main_me_selector"
+                 android:clickable="false"/>
+             <TextView 
+                 android:id="@+id/btn_page_me_text"
+                 style="@style/main_tab_text"
+                 android:text="我的"
+             /> 
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

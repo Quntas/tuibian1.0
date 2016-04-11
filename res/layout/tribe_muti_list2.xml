@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buluo_tuijian_gridviewlinerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <GridView
+            android:id="@+id/buluo_tuijian_gridviewshang"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchMode="columnWidth"
+            android:numColumns="3" >
+        </GridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/buluo_tuijian_zhongjian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buluo_tuijian_gridviewlinerlayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+            android:text="推荐" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            android:gravity="right"
+             
+            android:text="更多>" />
+    </RelativeLayout>>
+    <LinearLayout
+        android:id="@+id/buluo_tuijian_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+ android:layout_below="@id/buluo_tuijian_zhongjian">
+         <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/buluo_tuijian_gridviewxia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" />
+    </LinearLayout>
+    <!-- 下面是一个listview -->
+
+</RelativeLayout>

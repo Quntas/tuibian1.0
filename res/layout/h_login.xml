@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/h_login_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/about_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" >
+
+        <TextView
+            android:id="@+id/login_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="手机号"
+            android:textColor="@color/title_bar"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/h_login_user"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:maxLength="20"
+            android:digits="0123456789qazwsxedcrfvtgbyhnujmiklopQAZWSXEDCRFVTGBYHNUJMIKLOP"
+            android:textColor="@color/title_bar"
+            android:textColorHint="@color/title_bar"
+            android:textCursorDrawable="@drawable/search_fucs" />
+
+        <ImageView
+            android:id="@+id/name_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/h_login_user"
+            android:layout_centerVertical="true"
+            android:paddingRight="2dp"
+            android:src="@drawable/l_clean"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_bar"
+            android:paddingTop="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwd_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" >
+
+        <TextView
+            android:id="@+id/lonin_pwd_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="密码"
+            android:textColor="@color/title_bar"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/h_login_key"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:digits="@string/limit_pwd"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/title_bar"
+            android:textColorHint="@color/title_bar"
+            android:textCursorDrawable="@drawable/search_fucs" />
+
+        <ImageView
+            android:id="@+id/pwd_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/h_login_key"
+            android:layout_centerVertical="true"
+            android:paddingRight="2dp"
+            android:src="@drawable/l_clean"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_bar"
+            android:paddingTop="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp" >
+
+        <ImageView
+            android:id="@+id/h_login_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/h_login_buttontouch_seletor"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login_button_text"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" >
+
+       <Button 
+        android:id="@+id/exp_button"
+        android:layout_height="45dp"
+        android:layout_width="100dp"
+        android:text="注   册"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/register_user_btn"
+        android:textColor="@color/title_bar"
+        android:textSize="15sp"/> 
+    </RelativeLayout>
+</LinearLayout>

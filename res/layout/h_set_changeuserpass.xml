@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前用户:"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/h_change_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:paddingTop="2dp"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="#F8F8F8" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp" >
+
+            <EditText
+                android:id="@+id/h_change_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:digits="@string/limit_pwd"
+                android:ems="10"
+                android:hint="@string/login_account_pwd_hint"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingTop="2dp"
+                android:saveEnabled="true"
+                android:textColor="#333"
+                android:textColorHint="#BABABA"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/clean1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/h_change_pass"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/l_clean1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#E6E6E6" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp" >
+
+            <EditText
+                android:id="@+id/h_change_passnew"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:digits="@string/limit_pwd"
+                android:ems="10"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingTop="2dp"
+                android:saveEnabled="true"
+                android:textColor="#333"
+                android:textColorHint="#BABABA"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/clean2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/h_change_passnew"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/l_clean1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#E6E6E6" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp" >
+
+            <EditText
+                android:id="@+id/h_change_passnew2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:digits="@string/limit_pwd"
+                android:ems="10"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingTop="2dp"
+                android:saveEnabled="true"
+                android:textColor="#333"
+                android:textColorHint="#BABABA"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/clean3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/h_change_passnew2"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/l_clean1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#E6E6E6" >
+        </View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+
+        <Button
+            android:id="@+id/h_changepass_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/h_change_pass_btn"
+            android:text="提   交"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</LinearLayout>

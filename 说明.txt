@@ -1,0 +1,70 @@
+
+
+最新    推荐   关注
+
+latest  hot    follow
+-----------------------------------------------------------------
+登录（使用220后台(改为136..)登陆，前台显示手机号）
+注册（未提交后台）
+修改密码（未提交后台）
+修改用户信息（提交后台）
+
+
+
+
+
+
+webcome页 -> GuidePageActivity（仅第一次使用出现）
+
+->MainActivity
+
+	从getSharedPreferences取用户名及口令，如有则：
+
+	1）自动login，取用户信息，保存至 CGlobal.m_User
+	   autoLogin()
+
+	2）调用MeFragment函数，填充内容
+	   initEventByLogin()
+
+->MeFragment
+
+	1）我的相关：判断是否登录：
+			如登录，则填充信息；
+			否则隐藏其它按钮，仅保留关于，点击头像转登录页面
+
+set 退出登录
+	RemoveLognInfo
+
+
+LoginActivity
+	登录成功，finish，getSharedPreferences保存用户名密码，取json中用户信息，保存至 CGlobal.m_User
+	注册 -> RegActivity
+
+RegActivity
+	注册成功，finish，转SetChangeUserinfo 设置（修改）用户基本信息
+
+
+SetChangeUserinfo
+	增加生日
+	成功，finish 或 SetChangePlayerinfo
+
+----------------------------------------------------------------
+CUserInfo结构修改（含DB），-生日、-空间等
+
+
+CUser结构修改（含DB），+生日
+----------------------------------------------------------------
+
+【接口】
+
+UserRegServlet	注册手机号
+	map.put("phoneNo", phoneNumber);
+	map.put("verifyCode", verifycode);
+	map.put("password", password);
+
+GetUserInfoServlet	取用户信息
+	map.put("userId", userId);
+
+GetVerifyCodeServlet
+	map.put("phoneNo", phoneNumber);
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:orientation="vertical" >
+
+        <com.tuibian.view.bannerview.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.tuibian.view.bannerview.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </FrameLayout>
+    </FrameLayout>
+	<FrameLayout
+	        android:id="@+id/main_notice"
+	        android:layout_marginTop="5dip"
+	        android:layout_width="match_parent"
+	        android:layout_below="@id/framelayout"
+	        android:layout_height="wrap_content" >
+	</FrameLayout>
+	<View
+         android:layout_width="match_parent"
+         android:layout_height="0.5dip"
+         android:layout_marginTop="1dp"
+         android:layout_below="@id/main_notice"
+         android:background="#7B7B7B" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="名称："
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:ems="10"
+                android:text="悦动全民健身中心"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:paddingTop="2dp"
+                android:saveEnabled="true"
+                android:textColor="#333"
+                android:textColorHint="#BABABA"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" >
+    	</View>
+        
+
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" >
+    	</View>
+    	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="位置："
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/venue_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:ems="10"
+                android:text="天秀路龙背村路9-5号悦动全民健身中心"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:paddingTop="2dp"
+                android:saveEnabled="true"
+                android:textColor="#333"
+                android:textColorHint="#BABABA"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        
+    	<View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" >
+    	</View>
+    	
+        
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" >
+    	</View>
+
+
+       
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#E6E6E6" >
+        </View>
+
+        <com.tuibian.view.NoScrollListView 
+		    android:id="@+id/news_listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginLeft="15dp"
+		    android:divider="#D3D3D3"
+		    android:dividerHeight="1dp"
+		    android:scrollbars="none"
+		    android:horizontalSpacing="10dp"
+		    android:cacheColorHint="@android:color/transparent"
+		    android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+    
+</LinearLayout>

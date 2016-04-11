@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="@color/txt_blue"
+        android:orientation="vertical" >
+
+        <com.tuibian.view.bannerview.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.tuibian.view.bannerview.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/venue_new_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingTop="2dp"
+                    android:saveEnabled="true"
+                    android:text="天秀路龙背村路9-5号悦动全民健身中心"
+                    android:textColor="#333"
+                    android:textColorHint="#BABABA"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6E6" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="30dp"
+                    android:text="地址："
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/venue_new_address"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:background="@null"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingTop="2dp"
+                    android:saveEnabled="true"
+                    android:text="天秀路龙背村路9-5号悦动全民健身中心"
+                    android:textColor="#333"
+                    android:textColorHint="#BABABA"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6E6" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="30dp"
+                    android:text="电话："
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/venue_new_phone"
+                    android:layout_width="280dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingTop="2dp"
+                    android:saveEnabled="true"
+                    android:text="400-929-8988"
+                    android:textColor="#333"
+                    android:textColorHint="#BABABA"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6E6" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/wifi"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/wifi" />
+
+                <ImageView
+                    android:id="@+id/shower"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="180dp"
+                    android:src="@drawable/shower" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6E6" >
+            </View>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/venue_xiangmu_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/blue"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#D3D3D3"
+                    android:dividerHeight="1dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6E6" >
+            </View>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="场馆信息："
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/venue_new_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="位置："
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:background="#E6E6E6" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/venue_pinglun_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#D3D3D3"
+                    android:dividerHeight="1dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+
+            <com.tuibian.view.NoScrollListView
+                android:id="@+id/news_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#D3D3D3"
+                android:dividerHeight="1dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

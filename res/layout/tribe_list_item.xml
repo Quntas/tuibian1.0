@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tribe_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon"
+            android:paddingLeft="3dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tribe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:text="昵称"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/player_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#FF0000"
+                android:text="排名"
+                android:visibility="invisible"
+                android:textSize="16dp" />
+             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tribe_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="签名"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tribe_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:paddingRight="30dp"
+                    android:singleLine="true"
+                    android:text="时间"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:padding="9dp" >
+
+        <RelativeLayout
+            android:id="@+id/city_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="#fff" >
+
+            <TextView
+                android:id="@+id/venue_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="运动鞋"
+                android:textColor="#7B7B7B"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/city_btn"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/venue_type1"
+                android:background="@drawable/h_choose_city1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/detail_rl"
+            android:layout_toRightOf="@+id/city_rl"
+            android:background="#E7E7E7" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/keyWord"
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:hint=" 搜索 "
+                android:paddingLeft="35dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#A0A0A0"
+                android:textColorHint="#BBBCC1"
+                android:textCursorDrawable="@drawable/search_bg"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="#fff" >
+
+            <ImageButton
+                android:id="@+id/detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#fff"
+                android:src="@drawable/h_fustation_map_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="1dp"
+        android:background="#7B7B7B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+ <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/venue_listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#D3D3D3"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both" />
+
+        
+        
+        
+        
+        <ListView
+            android:id="@+id/search_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="51dp"
+            android:background="#FFF"
+            android:divider="#40000000"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/venue_bpush_msg_none_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有满足条件的数据！"
+                android:textColor="#5F5F5F"
+                android:textSize="13sp"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
